@@ -1,0 +1,90 @@
+@import "./Vars";
+
+.pokedex {
+    
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    width: 66vw;
+    height: 50vw;
+
+    > .pokedex-right {
+        width: 50%;
+        background: $plastic;
+        position: relative;
+        border-top-right-radius: $top-border-radius;
+        border-bottom-right-radius: $bottom-border-radius;
+        border-bottom: 10px solid darken($plastic, 20%);
+        border-right: 8px solid darken($plastic, 20%);
+        border-top: 2px solid lighten($plastic, 30%);
+        padding: 20px;
+        padding-left: 35px;
+
+        &::before {
+            display: block;
+            width: 30px;
+            content: "";
+            background: linear-gradient(to right,
+                darken($plastic, 15%) 0%,
+                darken($plastic, 15%) 25%,
+                lighten($plastic, 20%) 50%,
+                darken($plastic, 15%) 75%,
+                darken($plastic, 15%) 100%
+            );
+            position: absolute;
+            left: -15px;
+            top: 0;
+            height: 100%;
+        }
+    }
+
+    > .pokedex-left {
+        width: 50%;
+        background: $plastic;
+        padding: 20px;
+        padding-right: 35px;
+        border-bottom: 10px solid darken($plastic, 20%);
+        border-top-left-radius: $top-border-radius;
+        border-bottom-left-radius: $bottom-border-radius;
+        border-top: 2px solid lighten($plastic, 30%);
+        box-sizing: border-box;
+        flex-shrink: 0;
+
+        
+    }
+
+    .screen {
+        box-sizing: border-box;
+        width: 100%;
+        border: 8px solid $screen-border;
+        border-radius: 3px;
+        background: $screen;
+        color: $screen-text;
+        height: 80%;
+        overflow: auto;
+        padding: 20px;
+        font-size: 1.2em;
+        text-align: center;
+        font-family: 'Rubik Mono One';
+
+        .screen {
+            border: none;
+        }
+
+        a {
+            color: $screen-text;
+        }
+    }
+}
+
+.pokedex-button {
+    width: 50px;
+    height: 50px;
+    background: $button; 
+    background: radial-gradient(ellipse at center, 
+        lighten($button, 20%) 0%,
+        darken($button, 20%) 99%);
+    border-radius: 30px;
+    border: 3px solid #eee;
+    margin-bottom: 20px;
+}

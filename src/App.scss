@@ -1,0 +1,19 @@
+a {
+    text-decoration: none;
+    transition: color 500ms ease;
+}
+
+body, html {
+    height: 100%;
+
+    > div {
+        height: 100%;
+    }
+}
+
+.app {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}

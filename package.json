@@ -1,0 +1,29 @@
+{
+  "name": "pokemon",
+  "version": "1.0.0",
+  "description": "a pokemon browser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react-redux": "6.0.6",
+    "fuse-box": "3.4.0",
+    "node-sass": "4.9.3",
+    "space-lift": "0.8.0",
+    "typescript": "3.0.1"
+  },
+  "dependencies": {
+    "@types/twitter": "0.0.28",
+    "pokeapi-js-wrapper": "1.1.1",
+    "pokemon-base-stats": "0.7.0",
+    "react": "16.4.2",
+    "react-dom": "16.4.2",
+    "react-pure-lifecycle": "3.0.0",
+    "react-redux": "5.0.7",
+    "react-router-dom": "4.3.1",
+    "spacelift": "0.2.6"
+  }
+}
